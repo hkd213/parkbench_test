@@ -1,0 +1,6 @@
+
+@mixin h1($color: $blackRock) {
+  color: $color;
+  font-size: 6rem;
+  line-height: 6.5rem;
+}
