@@ -4,8 +4,12 @@
 }
 
 html, body {
-    font-size: 6px;
+    font-size: 10px;
     font-family: $mainFont;
+
+    @media ($tablet) {
+        font-size: 6px;
+    }
 
     @media ($projector) {
         font-size: 10px;
