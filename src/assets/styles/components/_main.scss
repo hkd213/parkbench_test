@@ -1,0 +1,66 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .previews {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 1.5rem;
+
+    @media ($tablet) {
+      margin: 15rem auto;
+      flex-direction: row;
+    }
+
+    .preview {
+      display: flex;
+      flex-direction: row;
+      margin-right: 2.8rem;
+      margin-bottom: 4rem;
+
+      @media ($tablet) {
+        margin-bottom: 0;
+      }
+
+      &__image {
+        width: 12.2rem;
+      }
+
+      &__content {
+        margin-left: 1.6rem;
+        font-weight: 800;
+        width: 26.8rem;
+
+        &-title {
+          text-transform: uppercase;
+          font-size: 1.1rem;
+          line-height: 1.5rem;
+          letter-spacing: 0.1rem;
+          font-weight: 800;
+        }
+
+        &-text {
+          font-size: 2rem;
+          line-height: 2.6rem;
+        }
+
+        &-time {
+          margin-top: 1.5rem;
+          color: $raven;
+          font-weight: normal;
+          font-size: 1.4rem;
+          line-height: 1.9rem;
+
+          &::before {
+            position: relative;
+            top: 0.2rem;
+            margin-right: 0.6rem;
+            filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(0);
+            content: url('../icons/time.svg');
+          }
+        }
+      }
+    }
+  }
+}

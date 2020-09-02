@@ -20,6 +20,7 @@
     margin-top: -0.5rem;
     overflow:hidden;
     z-index: 1;
+    max-height: 66.4rem;
 
     @media ($tablet) {
       width: 97.5rem;
@@ -46,7 +47,7 @@
 
     @media ($tablet) {
       margin-top: 11.5rem;
-      margin-left: 32.1rem;
+      margin-left: calc(85% - 51.5rem);
     }
 
     &-info {
@@ -111,4 +112,16 @@
       content: url('../icons/time.svg');
     }
   }
+}
+
+.lead_generation {
+  color: $leadGeneration;
+}
+
+.social_media {
+  color: $socialMedia;
+}
+
+.real_estate {
+  color: $realEstateGuides;
 }
