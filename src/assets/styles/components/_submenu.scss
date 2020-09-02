@@ -1,3 +1,10 @@
+.submenu-display {
+  display: none;
+
+  @media ($tablet) {
+    display: block;
+  }
+}
 .submenu {
   display: flex;
   flex-direction: column;
@@ -71,6 +78,7 @@
   position: absolute;
   display: none;
   padding: 1rem;
+  z-index: 2;
 
   width: 55rem;
   height: 5rem;

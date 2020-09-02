@@ -1,0 +1,114 @@
+.header {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media ($tablet) {
+    flex-direction: row;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      @media ($tablet) {
+      }
+    }
+  }
+
+  &__right {
+    position: relative;
+    background: $headerMain;
+    margin-top: -0.5rem;
+    overflow:hidden;
+    z-index: 1;
+
+    @media ($tablet) {
+      width: 97.5rem;
+      height: 57.4rem;
+      margin-top: 0;
+    }
+
+    @media ($tablet) {
+      &::before {
+        //background-size: 97.5rem 57.4rem;
+        background-image: url('../images/header.png');
+        content: "";
+        position: absolute;
+        width: 81.3rem;
+        height: 57.4rem;
+      }
+    }
+  }
+
+  &__content {
+
+    margin: 2.4rem 1.5rem;
+    color: $white;
+
+    @media ($tablet) {
+      margin-top: 11.5rem;
+      margin-left: 32.1rem;
+    }
+
+    &-info {
+
+      .tab {
+        background: $realEstateGuides;
+        border-radius: 0.2rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1rem;
+        color: $white;
+        padding: 0.4rem 0.6rem;
+        margin-right: 2rem;
+      }
+
+      @media ($tablet) {
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        color: $white;
+      }
+
+    }
+
+    &-text {
+      margin-top: 3.1rem;
+      font-weight: 800;
+
+      font-size: 2.4rem;
+      line-height: 3rem;
+
+      @media ($tablet) {
+        width: 51.5rem;
+        font-size: 4.5rem;
+        line-height: 5rem;
+      }
+
+    }
+    &-more {
+      margin-top: 2.4rem;
+      font-weight: 800;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      cursor: pointer;
+
+      @media ($tablet) {
+        margin-top: 3.8rem;
+      }
+
+      &::after {
+        margin-left: 1.5rem;
+        content: url('../icons/rigth.svg');
+      }
+    }
+  }
+
+  .time {
+    &::before {
+      margin-right: 0.6rem;
+      content: url('../icons/time.svg');
+    }
+  }
+}
