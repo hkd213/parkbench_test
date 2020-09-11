@@ -105,12 +105,12 @@
       }
     }
   }
+}
 
-  .time {
-    &::before {
-      margin-right: 0.6rem;
-      content: url('../icons/time.svg');
-    }
+.time {
+  &::before {
+    margin-right: 0.6rem;
+    content: url('../icons/time.svg');
   }
 }
 

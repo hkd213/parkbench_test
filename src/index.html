@@ -27,18 +27,19 @@
         <div class="menu__phone">
             <div class="menu__actions">
                 <div class="menu__search"></div>
-                <div class="menu__bar"></div>
+                <input type="checkbox" id="toggle">
+                <label class="menu__bar" for="toggle"></label>
             </div>
         </div>
     </nav>
     <div class="submenu-display">
         <div class="submenu">
-            <div class="submenu__item prospecting">Prospecting</div>
+            <div class="submenu__item item-prospecting">Prospecting</div>
             <div class="submenu__item">Lead Generation</div>
             <div class="submenu__item">Social Media</div>
             <div class="submenu__item">Real Estate Guides</div>
             <div class="submenu__item">How To</div>
-            <div class="submenu__item submenu__popup">Marketing Tips</div>
+            <div class="submenu__item">Marketing Tips</div>
             <div class="popup">
                 <div class="popup__main">
                     <div class="popup__item">
@@ -132,7 +133,57 @@
                 </div>
             </div>
         </div>
+        <div class="prospecting">
+            <div class="h2">Prospecting</div>
+            <div class="prospecting__content">
+                <div class="prospecting__content-cards">
+                    <div class="prospecting__content-card">
+                        <img src="assets/images/card.png" alt="card">
+                        <div class="text">10 reasons why you are not generating real estate clients online (2020
+                            edition)
+                        </div>
+                    </div>
+                    <div class="prospecting__content-card">
+                        <img src="assets/images/card.png" alt="card">
+                        <div class="text">10 reasons why you are not generating real estate clients online (2020
+                            edition)
+                        </div>
+                    </div>
+                    <div class="prospecting__content-card">
+                        <img src="assets/images/card.png" alt="card">
+                        <div class="text">10 reasons why you are not generating real estate clients online (2020
+                            edition)
+                        </div>
+                    </div>
+                    <div class="prospecting__content-card">
+                        <img src="assets/images/card.png" alt="card">
+                        <div class="text">10 reasons why you are not generating real estate clients online (2020
+                            edition)
+                        </div>
+                    </div>
+                </div>
+                <div class="prospecting__right">
+                    <div class="prospecting__right-row">
+                        <div class="prospecting__right-text">
+                            ZVI band contactually CEO talks about building a successful CRM for agents...
+                        </div>
+                        <div class="time"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+<script>
+    $('#toggle').change(function() {
+        $('.submenu-display').toggle();
+    });
+</script>
+
 </body>
 </html>

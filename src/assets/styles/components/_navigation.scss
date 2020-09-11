@@ -92,17 +92,20 @@
     }
   }
 
+  #toggle:checked + &__bar::after {
+    content: url('../images/alt-menu.png');
+  }
+
   &__bar {
-    &::before {
+    &::after {
       margin-right: 1.9rem;
       content: url('../images/menu.png');
     }
-    &:active {
-      &::before {
-        margin-right: 1.9rem;
-        content: url('../images/alt-menu.png');
-      }
-    }
   }
+
+  #toggle {
+    display: none;
+  }
+
 
 }

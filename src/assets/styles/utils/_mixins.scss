@@ -4,3 +4,18 @@
   font-size: 6rem;
   line-height: 6.5rem;
 }
+
+@mixin h2($color: $blackRock) {
+  color: $blackRock;
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+@mixin p() {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: $blackRock;
+}

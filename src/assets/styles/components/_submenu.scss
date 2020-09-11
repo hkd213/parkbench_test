@@ -7,48 +7,56 @@
 }
 .submenu {
   display: flex;
+  align-content: center;
   flex-direction: column;
-  justify-items: center;
-  justify-content: center;
-
-  font-style: normal;
+  background: $white;
   font-weight: 800;
   font-size: 1.3rem;
   line-height: 1.8rem;
   letter-spacing: 0.1rem;
-  color: $blackRock;
-
-  &:hover {
-    background: $patternsBlue;
-  }
+  padding: 1rem 1.8rem;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
 
   @media ($tablet) {
+    justify-content: center;
     height: 5rem;
     align-items: center;
     flex-direction: row;
+
+    &:hover {
+      background: $patternsBlue;
+    }
+
   }
 
   &__item {
-
-    padding: 1rem 0;
     cursor: pointer;
     text-transform: uppercase;
+    border-top: 0.1rem solid rgba(108, 113, 121, 0.2);
+    padding: 2rem 0 2rem 0;
+
+    &:nth-last-child(2) {
+      border-bottom: 0.1rem solid rgba(108, 113, 121, 0.2);
+    }
 
     @media ($tablet) {
+      border-top: 0;
       border-right: 0.1rem solid rgba(108, 113, 121, 0.2);
       padding: 0 4.4rem;
       &:nth-last-child(2) {
         border-right: 0;
+        border-bottom: 0;
       }
     }
-
-    .prospecting {
-      margin-left: 1rem;
-      font-family: "Font Awesome 5 Free";
-      content: "\f078";
-    }
-
   }
+
+  //.item-prospecting::after {
+  //  margin-left: 1rem;
+  //  font-family: "Font Awesome 5 Free";
+  //  content: "\f078";
+  //}
 
   &__popup {
     position: relative;
